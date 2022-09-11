@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+    background-color:#1aa6c9;
+
+}
+
+.sidenav {
+  height: 100%;
+  width: 240px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 200px;
+}
+
+.sidenav a {
+  padding: 6px 6px 50px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+
+.main {
+    margin-left:200px;
+    margin-top:70px;
+    text-align:center;
+    font-size:32px;
+   
+  }
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.circular--landscape { 
+    display: inline-block; 
+    position: relative; 
+    width: 400px; 
+    height: 400px; 
+    overflow: hidden; 
+    border-radius: 50%;
+    margin-top:50px;
+    
+} 
+    
+.circular--landscape img { 
+    width: auto; 
+    height: 100%; 
+    margin-left: -0px; 
+}
+
+</style>
+</head>
+<body>
+
+<div class="sidenav">
+  <a href="picindex.php">Image Registration</a>
+  <a href="CaptureImageChecking.php">Capture Image</a>
+  <a href="About.html">About</a>
+  <a href="Index.html">Log Out</a>
+  
+</div>
+
+<div class="main">
+  <h1>OAMS Student's Tab</h1>
+  <div class="circular--landscape"> <img src="demoteacher.jpg" /> </div>
+</div>
+</body>
+</html> 

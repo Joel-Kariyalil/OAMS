@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+    <title>Register</title>
+    <link rel="stylesheet" href="create.css"> 
+</head>
+<body>
+<div class="container">  
+    <form id="contact" action="AllowCapture.php" method="post">
+      <h3>Allow Attendance Collection</h3>
+      <h4>Online Attendance Monitoring System</h4>
+      <fieldset><br>
+        <input placeholder="Username" id="usr" name="usr" type="text" pattern="[A-Za-z0-9]+" tabindex="1"  required autofocus/>
+      </fieldset>
+      <fieldset>
+        <input id="allow" name="allow" placeholder="Allow Attendance (YES/NO)" type="text" pattern="[A-za-z]{2-3}"tabindex="4" required/>
+      </fieldset><br>
+      <fieldset>
+        <button name="submit" type="submit" onclick="AllowCapture.php" >Submit</button>
+      </fieldset>
+      <!--Upload the photos here, so for either Student/Teacher you capture the photos and upload them-->
+    </form>
+  </div>
+</body>

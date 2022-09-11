@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+    <title>Register</title>
+    <link rel="stylesheet" href="create.css"> 
+</head>
+<body>
+<div class="container">  
+    <form id="contact" action="Register.php" method="post">
+      <h3>OAMS Registration Page</h3>
+      <h4>Online Attendance Monitoring System</h4>
+      <fieldset><br>
+        <input placeholder="Username" id="usr" name="usr" type="text" pattern="[A-Za-z0-9]+" tabindex="1"  required autofocus/>
+      </fieldset>
+      <fieldset>
+        <input id="name" name="name" placeholder="Name" type="text" pattern="[A-Za-z ]+" title="Only alphabets are allowed" tabindex="2" required/>
+      </fieldset>
+      <fieldset>
+        <input placeholder="Password" id="pwd" name="pwd" type="password" pattern="[A-Za-z0-9@_.]+" tabindex="2" required/>
+      </fieldset>
+      <fieldset>
+        <input id="email" name="email" placeholder="Email Address" type="email" pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$" tabindex="2" required/>
+      </fieldset>
+      <fieldset>
+        <input id="phno" name="phno" placeholder="Phone Number" type="tel" tabindex="3" pattern="[0-9]{10}" required/>
+      </fieldset>
+      <fieldset>
+        <input id="role" name="role" placeholder="Role (Student/Teacher)" type="text" pattern="[A-za-z]+"tabindex="4" required/>
+      </fieldset><br>
+      <fieldset>
+        <button name="submit" type="submit" onclick="Register.php" >Submit</button>
+      </fieldset>
+      <!--Upload the photos here, so for either Student/Teacher you capture the photos and upload them-->
+    </form>
+  </div>
+</body>

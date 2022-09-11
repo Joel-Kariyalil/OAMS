@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>OAMS</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="loginblock.css">
+</head>
+<body>
+<div id="video_wrapper">
+
+<video autoplay muted loop>
+<source src="video1.mp4" type="video/mp4">
+</video>
+<div id="wrapper">
+<h1 title="Online Attendance Monitoring System">OAMS</h1>
+</div>
+  <div class="login-page">
+    <div class="form">
+      <form class="login-form" method="POST" action="Login.php">
+        <input style="background-color:#ffffffd2" type="text" id="usr" name="usr" placeholder="Username" pattern="[A-Za-z0-9]+" required/>
+        <input style="background-color:#ffffffd2" type="password" id="pwd" name="pwd" pattern="[A-Za-z0-9@_.]+" placeholder="Password" required/>
+        <button style="background-color:#489ac9a9"onclick="Login.php">login</button>
+        <p class="message"><a href="create.html">Create an account?    </a><a href="forgotpassword.html">Forgot Password?</a></p>
+      
+      </form>
+    </div>
+  </div>
+</div>
+</body>
+</html>
